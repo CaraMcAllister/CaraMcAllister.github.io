@@ -2,6 +2,8 @@
 <html>
 <head>
 	<title>QA - LIB2024 - CARA MCALLISTER</title>
+	<link rel="stylesheet" type="text/css" href="qa.css">
+	<meta charset="utf-8">
 </head>
 <body>
 	<h1>QA - LIB2024</h1>
@@ -23,7 +25,6 @@
 				<p><strong>Question:</strong>What tag is used to create a paragraph in html? Give an example.</p>
 				<p><strong>Answer:</strong>The tag &lt;p&gt; Paragraph &lt;/p&gt; is used to create a paragraph in a webpage.</p>
 			</li>
-			</li>
 			<li>
 				<p><strong>Question:</strong>Identify the odd one from these tags: &lt;span&gt;, &lt;p&gt;, &lt;a&gt;, &lt;i&gt;  and state the reason?</p>
 				<p><strong>Answer:</strong>&lt;p&gt; because it's the only tag not visually changing the style of the text.</p>
@@ -31,12 +32,48 @@
 			<li>
 				<p><strong>Question:</strong>What are the tags required to create a navigation list in HTML? Give one example with two navigation links (https://algonquincollege.com, https://google.com).</p>
 				<p><strong>Answer:</strong>&lt;nav&gt; and &lt;/nav&gt; are required the create a baseline nav element. Below is the example of a nav element.</p>
-				<p>
 					<nav>
 						<a href="https://algonquincollege.com" title="Algonquin Website">Algonquin</a>
 						<a href="https://google.com" title="Google">Google</a>
 					</nav>
-				</p>
+			</li>
+			<li>
+				<p><strong>Question:</strong>What element is used to create images? Name its attributes.</p>
+				<p><strong>Answer:</strong>The tag &lt;img&gt; is used as base for creating images. Its attributes are src, used to fetch the image from the designated repository, width, height, and alt, which is used to describe the image.</p>
+			</li>
+			<li>
+				<p><strong>Question:</strong>Identify the odd one from these tags: &lt;table&gt;, &lt;tr&gt;, &lt;b&gt;, &lt;td&gt;  and state the reason.</p>
+				<p><strong>Answer:</strong>&lt;b&gt; is the odd one out, as it is the tag used to bold text, and isn't related to building a table in html.</p>
+			</li>
+			<li>
+				<p><strong>Question:</strong>Give an example of color picker input.</p>
+				<p><strong>Answer:</strong>#ff6600</p>
+			</li>
+			<li>
+				<p><strong>Question:</strong>What is the use of name and value attributes? Give two examples.</p>
+				<p><strong>Answer:</strong>The name attribute is used to define an element's name, to be used as a reference. The value attribute is used to determine a specific dataset within its specific elements. An example of the name attribute would be &lt;meta name="author" content="Cara M"&gt;. An example of the value attribute would be &lt;progress value="50" max="300"&gt;</p>
+			</li>
+			<li>
+				<p><strong>Question:</strong>Give an example of inline style.</p>
+				<p><strong>Answer:</strong><p style="font-family:sans-serif;">A short paragraph in sans-serif font.</p>
+			</li>
+			<li>
+				<p><strong>Question:</strong>How would you link an external style sheet? Give example.</p>
+				<p><strong>Answer:</strong>I would use the following tag and attributes &lt;link rel="stylesheet" type="text/css" href="stylesheet.css"&gt; and place this within the &lt;head&gt; tag.</p>
+			</li>
+			<li class="center">
+				<p><strong>Question:</strong>Create CSS block to center an element both horizontally and vertically that has position:absolute and has width:200px and height:200px.</p>
+				<!-- Making this chunk absolute broke all the remaining code. -->
+				<p><strong>Answer:</strong>This is a centered paragraph with the position set as relative because absolute doesn't work here.</p>
+			</li>
+			<li>
+				<p><strong>Question:</strong>Create CSS keyframes block called "spin" that rotates an element.</p>
+				<p class="spin"><strong>Answer:</strong>This element spins.</p>
+			</li>
+			<li>
+				<p><strong>Question:</strong> Create CSS animation block to rotate an element that has the following properties : class "rotate-me"; It rotates 5 times at intervals of 0.5s with "linear" transition using animation keyframes "spin"</p>
+				<!-- It would not target rotate-me at all and ignored the attribute until I removed the dash. It also doesn't work, but when put through a CSS validator, it would not even show the code used to build rotateme.-->
+				<p class="rotateme"><strong>Answer:</strong>This element rotates five times at intervals of 0.5s.</p>
 			</li>
 		</ol>
 </body>

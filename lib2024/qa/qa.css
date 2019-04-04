@@ -1,0 +1,40 @@
+.center { 
+  height: 200px;
+  width: 200px;
+  position: relative;
+}
+
+.spin {
+	width: 200px;
+	height: 100px;
+	background: orange;
+	position: relative;
+	animation-name: myspin;
+	-webkit-animation: myspin 5s infinite; 
+}
+
+
+@-webkit-keyframes myspin {
+  50% {-webkit-transform: rotate(180deg);
+}
+
+@keyframes myspin {
+	50% {transform: rotate(180deg);
+}
+
+.rotateme {
+	width: 200px;
+	height: 200px;
+	background: blue;
+	position: relative;
+	animation-name: spinner;
+	-webkit-animation: spinner 0.5s linear 5;
+}
+
+@-webkit-keyframes spinner {
+	0% {transform: rotate(90deg);
+}
+
+@keyframes spinner {
+	0% {transform: rotate(90deg);
+}
