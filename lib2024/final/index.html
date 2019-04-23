@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Final</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/final.css">
+	<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<script src="jquery-3.4.0.min.js"></script>
+</head>
+<body>
+	<div class="overlay-container loader-container">
+		<div class="loader"></div>
+	</div>
+	<header>
+		<div class="header">
+			<h1>MY LOGO</h1>
+		</div>
+	</header>
+	<nav>
+		<div class="topnav" id="myTopnav">
+  			<a href="#home" class="active">HOME</a>
+ 			<a href="#about">ABOUT</a>
+ 			<a href="#schedule">SCHEDULE</a>
+  			<a href="#portfolio">PORTFOLIO</a>
+  			<a href="#contact">CONTACT</a>
+  			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    		<i class="fas fa-bars"></i>
+    		</a>
+		</div>
+	</nav>
+	<section>
+	<div class="container">
+		<div class="container__text">
+		<h2>ABOUT</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et sem eget erat laoreet lacinia. Aliquam erat ipsum, iaculis sit amet viverra in, pellentesque a enim. Vivamus odio augue, faucibus at pretium in, interdum at ipsum. Nulla finibus rutrum erat, in pulvinar leo scelerisque a. Vivamus non nibh non nunc blandit sodales. Donec congue velit odio, at imperdiet erat tristique a. Aenean non semper augue. Vestibulum sem erat, volutpat in rhoncus ac, ultricies a nulla. Pellentesque dui nulla, mattis at ligula at, fringilla fermentum odio. Curabitur ornare non purus in facilisis. Mauris ac feugiat enim, eget commodo nibh. <br> <br>
+		Etiam a nisi at diam lacinia semper. Integer sit amet efficitur erat. Pellentesque volutpat felis risus, vitae aliquam velit pretium eu. Duis semper lobortis augue, eget semper mauris mattis sed. Nam eleifend rutrum egestas. Sed ac congue lorem, vel bibendum leo. Duis quis lectus a diam rutrum fermentum nec sit amet velit.
+	</div>
+		<img src="images/architecture-clouds-lighthouse-2147459.jpg" id="container__image" alt="lighthouse"> </p>
+	</div>
+	<div class="schedule" style="overflow-x:auto;">
+		<h2>SCHEDULE</h2>
+		<table>
+			<tr>
+				<th>TIME</th>
+				<th>MONDAY</th>
+				<th>TUESDAY</th>
+				<th>WEDNESDAY</th>
+				<th>THURSDAY</th>
+				<th>FRIDAY</th>
+			</tr>
+			<tr>
+				<td>09:00-11:00</td>
+				<td>Communications I</td>
+				<td>Client Services</td>
+				<td>Special Collections</td>
+				<td>Directed Research Seminar</td>
+				<td>Client Services</td>
+			</tr>
+			<tr>
+				<td>11:00-12:30</td>
+				<td>Reference</td>
+				<td>Internet App</td>
+				<td>Library Software</td>
+				<td>French</td>
+				<td>Reference</td>
+			</tr>
+			<tr>
+				<td>14:00-15:00</td>
+				<td>Acquisitions</td>
+				<td>General Elective</td>
+				<td>Marketing</td>
+				<td>Emerging Library Tech</td>
+				<td>Library Software</td>
+			</tr>
+			<tr>
+				<td>15:30-17:30</td>
+				<td>French</td>
+				<td>French</td>
+				<td>Acquisitions</td>
+				<td>Subject Analysis</td>
+				<td>Internet App</td>
+			</tr>
+		</table>
+	</div>
+	<div id="wrapper" class="clearfix">
+	<div id="first">
+		<form id="form" action="submit.php" method="post">
+			<h2>EDIT PROFILE</h2>
+			<div class="table">
+				<div class="tabler">
+					<label><b>Name:</b></label>
+				</div>
+				<div class="tabled">
+					<input type="text" name="name" placeholder="John Doe">
+				</div>
+			</div>
+			<div class="table">
+				<div class="tabler">
+					<label><b>Email:</b></label>
+				</div>
+				<div class="tabled">
+					<input type="Email" name="email" placeholder="johndoe@website.com">
+				</div>
+			</div>
+			<div class="table">
+				<div class="tabler">
+					<label><b>Address:</b></label>
+				</div>
+				<div class="tabled">
+					<input type="text" name="address" placeholder="1234 John Doe Ave.">
+				</div>
+			</div>
+			<div class="table">
+				<div class="tabler">
+					<label><b>City:</b></label>
+				</div>
+				<div class="tabled">
+					<input type="text" name="city" placeholder="Ottawa">
+				</div>
+			</div>
+			<div class="table">
+				<div class="tabler">
+					<label><b>Province</b></label>
+				</div>
+					<div class="tabled">
+						<select name="province">
+						<option value="AB">Alberta</option>
+						<option value="BC">British Columbia</option>
+						<option value="MB">Manitoba</option>
+						<option value="NL">Newfoundland and Labrador</option>
+						<option value="NB">New Brunswick</option>
+						<option value="NS">Nova Scotia</option>
+						<option value="NT">Northwest Territories</option>
+						<option value="NU">Nunavut</option>
+						<option value="ON">Ontario</option>
+						<option value="PE">Prince Edward Island</option>
+						<option value="QC">Quebec</option>
+						<option value="NK">Saskatchewan</option>
+						<option value="YT">Yukon</option>
+						</select>
+					</div>
+			</div>
+			<div class="table">
+				<div class="tabler">
+					<label><b>Postal Code:</b></label>
+				</div>
+				<div class="tabled">
+					<input type="text" name="post" required="" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" placeholder="K4B 5R9">
+				</div>
+			</div>
+			<div class="table">
+				<input type="submit" name="submit">
+			</div>
+		</form>
+	</div>
+	<h2>PROFILE INFO</h2>
+	<div id="results">
+
+		<img src="images/people-2388584_640.png" id="pimg">
+		<p>John Doe<span id="name_result"></span></p>
+		<p>JohnDoe@algonquincollege.com<span id="email_result"></span></p>
+		<p>1385 Woodroffe Ave., Nepean,<span id="address_result city_result"></span></p>
+		<p class="province_result post_result">ON</p>
+		<a href="#" id="email_result"><i class="far fa-envelope"></i></a>
+	</div>
+</div>
+	</section>
+	<footer>
+		<div>
+			<h4>QUICK LINKS</h4>
+			<ul>
+				<li><a href="#schedule">SCHEDULE</a></li>
+				<li><a href="#about">ABOUT</a></li>
+				<li><a href="#portfolio">PORTFOLIO</a></li>
+				<li><a href="#contact">CONTACT</a></li>
+			</ul>
+		</div>
+		<div>
+			<h4>FOLLOW US</h4>
+			<a href="https://facebook.com"><i class="fab fa-facebook-square"></i></a>
+			<a href="https://youtube.com"><i class="fab fa-youtube"></i></a>
+			<a href="https://twitter.com"><i class="fab fa-twitter-square"></i></a>
+		</div>
+		<div>
+			<h4>ADDRESS</h4>
+			<p>1385 Woodroffe Ave.</p>
+			<p>Nepean, ON K2G 1V8</p>
+			<p>Canada</p>
+		</div>
+	</footer>
+<script src="js/final.js"></script>
+
+</body>
+</html>
