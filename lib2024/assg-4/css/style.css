@@ -1,0 +1,88 @@
+h1, h2, p, h3, a {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+.headnav {
+  background-color: #7cc576;
+  overflow: hidden;
+}
+
+#head {
+  display: flex;
+}
+
+#paget {
+  padding: 20px 70px;
+}
+
+#nav a {
+  float: left;
+  color: black;
+  background-color: #6dcff6;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 21px;
+  display: inline-block;
+  margin: 20px 50px;
+  border-radius: 4px;
+}
+
+#nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#one {
+  width: 10%;
+}
+
+#two {
+  width: 10%;
+}
+
+#three {
+  width: 10%;
+}
+
+#four {
+  width: 10%;
+}
+
+.bg {
+  background-image: url("../images/floor-tile.png");
+  background-size: cover;
+}
+
+.flexbox {
+  display: flex;
+}
+
+.para {
+  width: 90%;
+}
+
+#panda {
+  width: 100%;
+
+}
+
+#gallery {
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.img {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer {
+  background-color: #7cc576;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
